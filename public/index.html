@@ -5,13 +5,275 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+</head>
   <body>
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+
+
+   
+      
+    
+    
+
+<!----------------------------------------------------------- Navigatio Bar -------------------------------------------------------->
+<div class="navbar">
+  <a href="#" class="logo"><b style="color: #00ff34;">M</b>ED <b style="color: #00ff34;"> H</b>ELP<B></B></a>
+  <div class="toggle" onclick="navToggle();"></div>
+  <ol>
+      <li><a href="#home" onclick="navToggle();">Home</a></li>
+      <li><a href="#about" onclick="navToggle();">About</a></li>
+      <li><a href="#workout" onclick="navToggle();">Our Services</a></li>
+      <li><a href="#contact" onclick="navToggle();">Contact</a></li> 
+      <li><a href="#trainers" onclick="navToggle();">HealthCare-Provider</a></li>
+      <li><a href="register.html">Sign up</a></li>
+      <li><a href="login.html">Login</a></li>
+  </ol>
+</div>
+
+
+
+
+
+<!----------------------------------------------------------- Home Section -------------------------------------------------------->
+
+<section id="home" class="home view">
+  <div class="highlights">
+     <h3>feel Healthy with</h3>
+     <h1><b>MED </b> HELP</h1><br>
+  
+      <p class="tagline" style="color: #00ff34;"> 
+      Your Health Journey At Your Fingertips
+      </p>
+
+     
+  </div>
+  <div class="banner"></div>
+</section>
+
+
+
+
+<!----------------------------------------------------------- About Section -------------------------------------------------------->
+
+<section id="about" class="about view"> 
+  <div class="main">
+    <h2> <span>A</span>bout  <span> U</span>s</h2>
+    <h6 style="font-size:x-large; ">MedHelp is a comprehensive mobile application and website designed to empower individuals in tracking and managing their medication 
+      schedules effectively. The platform offers a range of features 
+      to ensure medication adherence, safety, and personalized recommendations for each patient.</h6>
+  </div>
+ 
+    <div class="cols">
+        <div class="box">
+            <img src="images/about1.jpg" alt="">
+        </div>
+
+<!---------can trainer be aded in i changed my mind----------------->
+
+        
+    </div>
+  </div>
+</section>
+<br> 
+
+
+
     <!-- built files will be auto injected -->
   </body>
+  <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </html>
+
+
+
+
+
+<!----------------------------------------------------------- Servises Section -------------------------------------------------------->
+
+<section id="workout" class="workout view">
+  <div class="main">
+      <h2><span>O</span>ur<span> S</span>ervices</h2>
+      <h6 style="font-size: larger;">Our Platform offers a range of features to ensure medication adherence,
+         safety, and personalized recommendations for each patient.</h6>
+  </div>
+  <div class="content">
+    
+
+
+
+        <!-------------Class1-------------->
+
+      <div class="frame">
+          <div class="box">
+              <img src="images\service1.jpg" alt="">
+          </div>
+          <div class="title">Medication Reminders</div>
+          <p>The mobile app and website provide customizable medication reminders, ensuring
+             that users never miss a dose. Users can set specific times for
+             taking each medication, and the system sends notifications to their devices to prompt them accordingly.
+              </p>
+      </div>
+
+
+      
+        <!-------------Class2-------------->
+
+        <div class="frame">
+          <div class="box">
+              <img src="images\service2.jpg" alt="">
+          </div>
+          <div class="title">Dosage Instructions</div>
+          <p>The system allows users to input their prescribed dosage instructions for each medication,
+             including frequency and dosage amounts.
+             This information is readily accessible for the user's reference.
+              </p>
+      </div>
+        <!-------------Class3-------------->
+
+        <div class="frame">
+          <div class="box">
+              <img src="images\service3.jpg" alt="">
+          </div>
+          <div class="title">Drug Interaction Checks</div>
+          <p>To ensure user safety, the system incorporates drug interaction checks. When multiple
+             medications are entered into the system, it automatically cross-references them to identify potential
+             drug interactions and alerts users and healthcare providers if any risks are detected.
+              </p>
+      </div>
+        <!-------------Class4-------------->
+
+        <div class="frame">
+          <div class="box">
+              <img src="images\service4.jpg" alt="">
+          </div>
+          <div class="title">OCR Prescription Scanning</div>
+          <p>Google Cloud Vision's Optical Character Recognition (OCR) capabilities are utilized to scan prescription labels.
+             Users can simply capture an image of their prescription, 
+            and the system automatically extracts medication details, reducing manual data entry errors.
+              </p>
+      </div>
+        <!-------------Class5-------------->
+
+        <div class="frame">
+          <div class="box">
+              <img src="images\service5.jpg" alt="">
+          </div>
+          <div class="title">Personalized Medication Recommendations</div>
+          <p>The system employs machine learning algorithms that take into account the user's medical history, allergies,
+             and past medication interactions to provide personalized medication recommendations.
+             This enhances medication effectiveness and minimizes adverse effects.
+              </p>
+      </div>
+        <!-------------Class6-------------->
+
+        <div class="frame">
+          <div class="box">
+              <img src="images\service6.jpg" alt="">
+          </div>
+          <div class="title">Healthcare Provider Interface</div>
+          <p>The admin interface is designed for healthcare providers to access patient
+             profiles securely. Providers can review medication regimens, monitor adherence levels, and intervene if necessary. 
+            This helps healthcare professionals offer personalized care and support to their patients remotely.
+              </p>
+      </div>
+
+      
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------- Contact Section -------------------------------------------------------->
+<br><br>
+<section id="contact" class="contact view">
+  <div class="main">
+      <h2><span>C</span>ontact</h2>
+      <h6 style="font-size: larger;">Please don't hesitate to contact us for more information about our
+           medical servises and to schedule a consultation</h6>
+  </div>
+
+  <div class="content">
+      <form>
+          <input class="name" id="name" type="text" placeholder="Name"  required="">
+          <input class="phone" id="phone" type="tel" placeholder="Phone"  required=""> 
+          <textarea class="mess" id="mess" rows="5" placeholder="Write Your Message Here"  required=""></textarea>
+          <br>
+          <button class="btn" id="submit" name="Submit" type="submit" value="submit" onclick="gotowhatsapp()">Send</button>
+                      
+         </form>
+  
+      <div class="bgimg"></div>
+  </div>
+
+
+
+<!---------- script for contact ---------------------------->
+<script>
+  function gotowhatsapp() {
+      
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var mess = document.getElementById("mess").value;
+      var url = "https://wa.me/96176468674?text=" 
+      + "Name: " + name + "%0a"
+      + "Phone: " + phone  + "%0a"
+      + "Message: " + mess  + "%0a"
+      
+      window.open(url, '_blank').focus();
+  }
+  </script>
+
+
+
+
+
+
+
+<!----------------------------------------------------------- Copyright -------------------------------------------------------->
+<section class="copyright">
+  &copy; copyright <a href="#">AFA-Coding </a>2023 | All Rights Reserved
+  </section>
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------- Script -------------------------------------------------------->
+
+  
+<script>
+  window.addEventListener('scroll',function(){
+   const navbar = document.querySelector('.navbar');
+   navbar.classList.toggle("sticky",window.scrollY>50);
+  });
+
+  const togglebar = document.querySelector('.toggle');
+  const menu = document.querySelector('ol');
+
+  function navToggle(){
+      togglebar.classList.toggle("active");
+      menu.classList.toggle("active");
+  };
+</script>

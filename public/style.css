@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --prime: #00ff34;
+}
+
+body {
+    background-color: #7a7979;
+
+}
+div {
+    background-image: url("background3.jpeg");
+  }
+/*----------------------------------------------------Style navbar--------------------------------------------------*/
+.navbar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 120px;
+    background-color: transparent;
+    justify-content: space-between;
+    z-index: 1111;
+    transition: 0.5s ease;
+    
+}
+
+.navbar.sticky {
+    padding: 6px 60px;
+    background: #0c1518;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.sticky .logo {
+    font-size: 2em;
+    color: var(--prime);
+}
+
+.navbar.sticky .logo B {
+    color: #fff;
+}
+
+.logo {
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.logo B {
+    color: var(--prime);
+}
+
+ol {
+    display: flex;
+    margin: auto 0;
+}
+
+ol li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+ol li a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ol li:hover a {
+    color: var(--prime);
+}
+
+
+
+/*----------------------------------------------------Common size for all section--------------------------------------------------*/
+
+.view {
+    width: 100%;
+    min-height: 80vh;
+    position: center;
+}
+
+.view1 {
+    text-decoration: none;
+    color: red;
+}
+
+
+.main {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.main h2 {
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+}
+
+span {
+    color: var(--prime);
+}
+
+.main h2::before {
+    position: absolute;
+    content: '';
+    background: var(--prime);
+    height: 3px;
+    width: 30%;
+    right: -15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+.main h6 {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+
+
+/*----------------------------------------------------Style Home Section--------------------------------------------------*/
+
+.home {
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    margin-bottom: 150px;
+}
+
+.highlights {
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+
+}
+
+.highlights h3 {
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left: 6px solid var(--prime);
+}
+
+.highlights h1 {
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+.highlights b {
+    color: var(--prime);
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.highlights .tagline {
+    color: #d7d7d7;
+    font-size: 1.7vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+.highlights .join a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: var(--prime);
+    border: 2px solid var(--prime);
+    border-radius: 50px;
+    background: transparent;
+    transition: 0.5s ease;
+}
+
+.highlights .join a:hover {
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background: var(--prime)
+}
+
+.tagline{
+    color:var(--prime)
+}
+/*----------------------------------------------------Style about section--------------------------------------------------*/
+.about .main h6 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about .content .cols {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 70px;
+}
+
+.about .content .cols p {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.about .content .cols p {
+    margin-left: 120px;
+}
+
+.about .content .cols a {
+    position: relative;
+    top: 20px;
+    color: #ffff;
+    background: var(--prime);
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.about .content .cols a:hover {
+    color: black;
+    background: white;
+}
+
+.about .content .cols .box {
+    position: relative;
+    height: 550px;
+    width: 450px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about .content .cols .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about view .main {
+font-size: 30px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------Style our servesis section--------------------------------------------------*/
+.workout .content {
+    flex-wrap: wrap;
+}
+
+.workout .content .frame {
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background: #222;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.workout .content .frame .box {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.workout .content .frame .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+}
+
+.workout .content .frame .box:hover img {
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+
+.workout .content .frame .title {
+    color: var(--prime);
+    padding: 5px 0;
+}
+
+.workout .content .frame p {
+    font-size: 0.8em;
+}
+
+
+
+
+
+/*----------------------------------------------------Style Contact section--------------------------------------------------*/
+
+
+.contact .content {
+    min-height: 100vh;
+}
+
+.contact .content form {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.637);
+    box-shadow: 0 10px 15 px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact .content form input {
+    color: rgb(0, 252, 0);
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+
+.contact .content form textarea {
+    width: 100%;
+    padding: 10px;
+    color: rgb(0, 252, 0);
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+
+.contact .content form input:focus,
+.contact .content form textarea:focus {
+    border: 2px solod var(--prime);
+    transition: 0.1s ease;
+}
+
+.contact .content form .btn {
+    letter-spacing: 1px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    color: var(--prime);
+    border-color: var(--prime);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 4px;
+}
+
+
+.btn {
+    letter-spacing: 1px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(21, 255, 21);
+    border-color: rgb(21, 243, 21);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 4px;
+    background-color: #eef1ee;
+
+
+}
+
+.btn:hover {
+    background: rgb(9, 250, 9);
+    color: #fff;
+}
+
+.contact .content form .btn:hover {
+    background: var(--prime);
+    color: #fff;
+}
+
+.contact .content .bgimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(images/bgimg1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+/*----------------------------------------------------Style Copyright section--------------------------------------------------*/
+.copyright {
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background: #222;
+    text-align: center;
+    font-size: 18px;
+}
+
+.copyright a {
+    color: var(--prime);
+    text-decoration: none;
+    margin: 0 2px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------Make reponsive--------------------------------------------------*/
+@media screen and (max-width:900px) {
+
+    .banner {
+        background: url(images/minibackground.jpg);
+    }
+
+    .navbar {
+        padding: 0 60px;
+    }
+
+    .navbar ol {
+        display: none;
+    }
+
+    .navbar ol.active {
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background: #222;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100% - 60px);
+    }
+
+    .navbar ol.active li {
+        margin: 8px;
+    }
+
+    .navbar ol.active li a {
+        font-size: 25px;
+    }
+
+    .navbar .toggle {
+        height: 25px;
+        width: 25px;
+        margin: auto 0;
+        cursor: pointer;
+        background: url(images/menubar.jpg);
+        background-size: 25px;
+        background-position: center;
+        filter: invert(1);
+        background-repeat: no-repeat;
+    }
+
+    .navbar .toggle.active {
+        background: url(images/close.png);
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .highlights h3 {
+        font-size: 3vw;
+        padding: 5px 10px;
+        border-left: 3px solid var(--prime);
+    }
+
+    .highlights h1 {
+        font-size: 16vw;
+    }
+
+    .highlights .join {
+        font-size: 1.8vw;
+        border: 1px solid var(--prime);
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .main h6 {
+        font-size: 15px;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .about .content .cols .box {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .about .content .cols .box img {
+        width: 100%;
+
+    }
+
+    .work .content .frame {
+        width: 260px;
+        pad: 18px;
+    }
+
+    .trainers .content .frame {
+        width: 350px;
+        padding: 15px 15px 50px 15px;
+        margin: 10px 5px;
+    }
+
+    .trainers .content .frame .box {
+        height: 200px;
+    }
+
+    .trainers .content .frame a {
+        border: 1.5px solid var(--prime);
+        padding: 3px 15px;
+    }
+
+    .contact .content form {
+        margin: auto;
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.637);
+        box-shadow: 0 10px 15 px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .copyright {
+        text-transform: capitalize;
+        height: 20px;
+        width: 100%;
+        line-height: 20px;
+        background: #222;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .highlights .tagline {
+        color: #d7d7d7;
+        font-size: 3.2vw;
+        text-align: center;
+        font-weight: normal;
+    }
+
+
+    .about .content .cols p {
+        margin-left: 0px;
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+.log {
+
+    letter-spacing: 1px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(21, 255, 21);
+    border-color: rgb(21, 243, 21);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 4px;
+    background-color: #eef1ee;
+
+
+
+
+
+}
+
+
+.login-box {
+    text-align: center;
+    margin-top: 80px;
+    width: 360px;
+    height: 280px;
+    margin-left: 500px;
+    border-radius: 3px;
+    background-color: rgb(21, 243, 21);
+}
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.welcome h2 {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome h2:hover {
+    color: rgb(9, 250, 9);
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    color: black;
+}
+
+input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    background-color: #001e5a;
+    color: white;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    background-color: #001e5a;
+    color: white;
+    font-size: 18px;
+}
+
+input[name="submit1"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    background-color: #001e5a;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.para-2 a {
+    color: #4a5f5a;
+}
+
+
+.view li a {
+    text-decoration: none;
+    color: #1b1b1b;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 23px;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.view li a:hover {
+    background-color: #1b1b1b;
+    color: #344a72;
+}
+
+.view li {
+    color: #344a72;
+}
+
+
+.signup-box {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 80px;
+    width: 360px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+}
+
+select {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    color: black;
+}
+
+.out {
+    color: rgb(9, 250, 9);
+}
+
+.out:hover {
+    color: #d7d7d7;
+
+}
+
+#Gender {
+    color: black;
+}
+
+#Gender option[value="Male"] {
+    color: black;
+}
+
+#Gender option[value="Female"] {
+    color: black;
+}
+
+.allpage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.Addtrainer {
+
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 360px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+}
+
+.viewtrainer {
+
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 80px;
+    width: 700px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+}
+
+.viewtrainer form {
+    width: 90%;
+    height: 100%;
+}
+
+#vtcolor {
+    color: black;
+}
+
+.viewcustomer {
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    width: 800px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+}
+
+.viewcustomer form {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.back {
+    color: rgb(35, 240, 35);
+    margin-left: 100px;
+
+}
+
+.tt {
+    color: rgb(35, 240, 35);
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-inline: 200px;
+    margin-block-start: 10px;
+    background-color: #0c1518;
+  
+}
+
+.container #height {
+    color: #0c1518;
+}
+
+.container #weight {
+    color: #0c1518;
+}
+
+
+
+.container #btn {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(21, 255, 21);
+    border-color: rgb(21, 243, 21);
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: #eef1ee;
+
+}
+
+.Addsession {
+    text-align: center;
+    margin-top: 80px;
+    width: 360px;
+    height: auto;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+    margin-left: 500px;
+}
+
+.MySessions {
+
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 80px;
+    width: 360px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+
+
+}
+.register{
+    
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 80px;
+    width: 360px;
+    height: 780px;
+    background-color: rgb(35, 240, 35);
+    border-radius: 3px;
+
+}
+.dietplan{
+    background-color: rgb(35, 240, 35); 
+    margin-top: 80px;
+    margin-right: 100px;
+}
+
+
+
+}
